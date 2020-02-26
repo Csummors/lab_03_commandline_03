@@ -346,6 +346,7 @@ Write the command(s) that you used to do this below:
 ----------
 cd /users/student/mtec1002-lab-03/books/science-fiction
 
+/users/student/mtec1002-lab-03/books/science-fiction
 ==========
 OPTIONAL
 13. Immediately change back to the mtec1002-lab-03 folder with a single command using a *relative* path.
