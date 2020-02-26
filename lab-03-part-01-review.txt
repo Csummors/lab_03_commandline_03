@@ -344,6 +344,7 @@ pg84.txt	pg86.txt
 
 Write the command(s) that you used to do this below:
 ----------
+cd /users/student/mtec1002-lab-03/books/science-fiction
 
 ==========
 OPTIONAL
