@@ -37,14 +37,14 @@ $ ls
 Copy and paste the output below.
 ----------
 
-
+soo.txt
 
 ==========
 7. Create another new file using touch.
 
 $ touch bar.txt
 ----------
-
+bar.txt	soo.txt
 
 
 ==========
@@ -52,7 +52,10 @@ $ touch bar.txt
 
 Copy and paste the output below.
 ----------
-
+drwxr-xr-x  4 student  staff  136 Feb 25 19:30 .
+drwxr-xr-x@ 7 student  staff  238 Feb 25 19:28 ..
+-rw-r--r--  1 student  staff    0 Feb 25 19:30 bar.txt
+-rw-r--r--  1 student  staff    0 Feb 25 19:29 soo.txt
 
 
 ==========
@@ -61,21 +64,25 @@ Copy and paste the output below.
 
 Write the command that you used to copy the file.  Additionally, copy and paste the output of your file listing below.
 ----------
+cp bar.txt baz.txt
 
-
+bar.txt	baz.txt	soo.txt
 
 ==========
 10. Delete the file called bar.txt and then list the files again.
 
 Write the command that you used to remove the file.  Copy and paste the output of your file listing below.
 ----------
+baz.txt	soo.txt
 ==========
 11. Move the file called foo.txt to qux.txt and then list the files again.
 
 
 Write the command that you used to move the file.  Copy and paste the output of your file listing below.
 ----------
+mv soo.txt qux.txt
 
+baz.txt	qux.txt
 
 
 ==========
@@ -90,7 +97,7 @@ Write the command that you used to move the file.  Copy and paste the output of 
 
 Write out the command that you used and what happened.
 ----------
-
+mdir: my_file: Directory not empty
 
 
 ==========
@@ -98,6 +105,8 @@ Write out the command that you used and what happened.
 
 Write out the command that you used and what happened.
 ----------
+rm my_file
+rm: my_file: is a directory
 
 
 
@@ -108,20 +117,20 @@ Force the removal of the directory and files using the -rf flag
 
 $ rm -rf my_files
 ----------
+books	logs	web
 
 
 
 ==========
 16. There's a txt file version of a book located in the mtec1002-lab-03 folder.  It is in the following directory if you're in the lab folder:
 
-books/other/pg1232.txt
 
 Use the command called cat on the file to show its contents. 
 
 Describe what happened below.
 ----------
 
-
+page open up
 
 ==========
 17. That was a lot of text.  Let's find ways to limit it.  Using the same file...
@@ -133,7 +142,7 @@ Use the command, head, on the file to show the contents of the beginning of the 
 Write the command that you used below.  Write the last line of the output below (it should be the title).
 ----------
 
-
+head pg1232.txt
 
 ==========
 18. Using the same file again!
@@ -144,7 +153,7 @@ Use tail on the file to show the contents of the end of the file.
 
 Write the command that you used below.  Write the last line of the output below (it should be the title).
 ----------
-
+tail pg1232.txt
 
 
 ==========
@@ -156,8 +165,8 @@ Use less and more on the file to show the contents of the file.  Try pressing sp
 
 Write the command that you used below.  Describe what spacebar and q does after using either less or more.
 ----------
-
-
+tail pg1232.txt
+more pg1232.txt
 
 ==========
 20. Describe what situations you would use the following commands for viewing files: less, more, cat, tail, head
@@ -165,14 +174,18 @@ Write the command that you used below.  Describe what spacebar and q does after 
 (Some characteristics that may help your description might be the length of the file, whether or not you'd like to read the whole thing... or just the beginning or end, etc.)
 ----------
 
-
+if a file is to dense 
 
 ==========
 21.  How many words are in pg1232.txt?  What command did you use to determine the word count?
 ----------
 
+wc pg1232.txt
+    5063   52639  305864 pg1232.txt
 
 
 ==========
 22.  How many lines are in pg1232.txt?  What command did you use to determine the line count?
 ----------
+wc -l  pg1232.txt 
+    5063 pg1232.txt
